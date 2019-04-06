@@ -125,8 +125,8 @@
             android:layout_width="60dp"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
-            android:text="@string/year"
-            android:textSize="10sp" />
+            android:text="@string/_0"
+            android:textSize="20sp" />
 
         <TextView
 
@@ -134,40 +134,40 @@
             android:id="@+id/monthTextView"
             android:layout_width="60dp"
             android:layout_height="50dp"
-            android:text="@string/mount"
-            android:textSize="10sp" />
+            android:text="@string/_0"
+            android:textSize="20sp" />
 
         <TextView
             android:gravity="center"
             android:id="@+id/dayTextView"
             android:layout_width="60dp"
             android:layout_height="50dp"
-            android:text="@string/day"
-            android:textSize="10sp" />
+            android:text="@string/_0"
+            android:textSize="20sp" />
 
         <TextView
             android:gravity="center"
             android:id="@+id/hourTextView"
             android:layout_width="60dp"
             android:layout_height="50dp"
-            android:text="@string/hour"
-            android:textSize="10sp" />
+            android:text="@string/_0"
+            android:textSize="20sp" />
 
         <TextView
             android:gravity="center"
             android:id="@+id/minTextView"
             android:layout_width="60dp"
             android:layout_height="50dp"
-            android:text="@string/min"
-            android:textSize="10sp" />
+            android:text="@string/_0"
+            android:textSize="20sp" />
 
         <TextView
             android:gravity="center"
             android:id="@+id/secTextView"
             android:layout_width="60dp"
             android:layout_height="50dp"
-            android:text="@string/sec"
-            android:textSize="10sp" />
+            android:text="@string/_0"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <TextView
