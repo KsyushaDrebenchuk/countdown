@@ -1,4 +1,4 @@
-package android.itacademy.by.countdown;
+package android.by.itacademy.countdown;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("android.itacademy.by.countdown", appContext.getPackageName());
+        assertEquals("android.by.itacademy.countdown", appContext.getPackageName());
     }
 }
