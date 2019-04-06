@@ -28,7 +28,9 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="20dp"></TextView>
+        android:layout_height="20dp">
+        
+    </TextView>
 
 
     <TextView
@@ -76,7 +78,7 @@
             android:gravity="center"
             android:layout_width="60dp"
             android:layout_height="20dp"
-            android:text="@string/month"
+            android:text="@string/mount"
             android:textSize="16sp" />
 
         <TextView
@@ -117,6 +119,7 @@
         android:orientation="horizontal">
 
         <TextView
+
             android:gravity="center"
             android:id="@+id/yearTextView"
             android:layout_width="60dp"
@@ -126,11 +129,12 @@
             android:textSize="10sp" />
 
         <TextView
+
             android:gravity="center"
             android:id="@+id/monthTextView"
             android:layout_width="60dp"
             android:layout_height="50dp"
-            android:text="@string/month"
+            android:text="@string/mount"
             android:textSize="10sp" />
 
         <TextView
@@ -181,7 +185,8 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:background="@drawable/delete_event"
-        android:text="@string/delete_event" />
+        android:text="@string/delete_event"
+        />
 
     <TextView
         android:layout_width="match_parent"

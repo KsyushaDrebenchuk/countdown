@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50sp"
         android:layout_gravity="center"
-        android:text="@string/action" />
+        android:hint="@string/action" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -66,7 +66,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/year"
+            android:id="@+id/editTextYearMain"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
@@ -74,15 +74,15 @@
             android:textSize="10sp" />
 
         <EditText
-            android:id="@+id/mount"
+            android:id="@+id/editTextMonthMain"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
-            android:hint="@string/month"
+            android:hint="@string/mount"
             android:textSize="10sp" />
 
         <EditText
-            android:id="@+id/day"
+            android:id="@+id/editTextDayMain"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
@@ -90,7 +90,7 @@
             android:textSize="10sp" />
 
         <EditText
-            android:id="@+id/hour"
+            android:id="@+id/editTextHourMain"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
@@ -98,7 +98,7 @@
             android:textSize="10sp" />
 
         <EditText
-            android:id="@+id/min"
+            android:id="@+id/editTextMinutesMain"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
@@ -106,7 +106,7 @@
             android:textSize="10sp" />
 
         <EditText
-            android:id="@+id/sec"
+            android:id="@+id/editTextSecondsMain"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
