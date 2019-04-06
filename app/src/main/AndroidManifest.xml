@@ -1,10 +1,30 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="android.itacademy.by.countdown">
 
-    <application android:allowBackup="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="android.by.itacademy.countdown">
+
+
+
+    <application>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.ca-app-pub-1501215034144631~1349082130"
+            android:value="ca-app-pub-1501215034144631/6744755337" />
+
+        android:allowBackup="true"
         android:label="@string/app_name"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"/>
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+    <activity android:name="android.by.itacademy.countdown.Main">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    </application>
+
 </manifest>
