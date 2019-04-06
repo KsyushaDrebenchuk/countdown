@@ -61,57 +61,107 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <TextView
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/year"
+            android:textSize="16sp" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="@string/month"
+            android:textSize="16sp" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="@string/day"
+            android:textSize="16sp" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="@string/hour"
+            android:textSize="16sp" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="@string/min"
+            android:textSize="16sp" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="@string/sec"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
             android:id="@+id/yearTextView"
-            android:layout_width="50dp"
+            android:layout_width="60dp"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
-            android:inputType="phone"
             android:text="@string/year"
-            android:textSize="10sp"
-            />
-
-        <TextView
-            android:id="@+id/monthTextView"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:inputType="phone"
-            android:text="месяц"
             android:textSize="10sp" />
 
         <TextView
-            android:id="@+id/dayTextView"
-            android:layout_width="50dp"
+            android:gravity="center"
+            android:id="@+id/monthTextView"
+            android:layout_width="60dp"
             android:layout_height="50dp"
-            android:inputType="phone"
+            android:text="@string/month"
+            android:textSize="10sp" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/dayTextView"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
             android:text="@string/day"
             android:textSize="10sp" />
 
         <TextView
+            android:gravity="center"
             android:id="@+id/hourTextView"
-            android:layout_width="50dp"
+            android:layout_width="60dp"
             android:layout_height="50dp"
-            android:inputType="phone"
             android:text="@string/hour"
             android:textSize="10sp" />
 
         <TextView
+            android:gravity="center"
             android:id="@+id/minTextView"
-            android:layout_width="50dp"
+            android:layout_width="60dp"
             android:layout_height="50dp"
-            android:inputType="phone"
             android:text="@string/min"
             android:textSize="10sp" />
 
         <TextView
+            android:gravity="center"
             android:id="@+id/secTextView"
-            android:layout_width="50dp"
+            android:layout_width="60dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="5dp"
-            android:inputType="phone"
             android:text="@string/sec"
             android:textSize="10sp" />
     </LinearLayout>

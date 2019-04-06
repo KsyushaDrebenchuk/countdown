@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Countdown</string>
     <string name="delete_event">Удалить событие</string>
-    <string name="sec">секунда</string>
-    <string name="min">минута</string>
+    <string name="sec">секунд</string>
+    <string name="min">минут</string>
     <string name="hour">час</string>
     <string name="day">день</string>
     <string name="year">год</string>
