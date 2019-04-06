@@ -1,6 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon_email"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/email" />
+
+    <TextView
+        android:id="@+id/name_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"></LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="До вашего события осталось...."
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/stopwatch" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="phone"
+            android:text="год"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/mount"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="phone"
+            android:text="месяц"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/day"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="phone"
+            android:text="день"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/hour"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="phone"
+            android:text="час"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/min"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="phone"
+            android:text="минута"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/sec"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="phone"
+            android:text="секунда"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"></LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Удалить событие" />
 
 </LinearLayout>
