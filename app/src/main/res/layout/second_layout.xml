@@ -11,8 +11,15 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="100dp">
+
+
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/year"
+            android:textSize="16sp" />
+
 
         </TextView>
 
@@ -54,9 +61,39 @@
             android:background="@drawable/stopwatch" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                        android:gravity="center"
+
+            android:id="@+id/hourTextView"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="@string/_0"
+            android:textSize="20sp"
+            />
+        <TextView
             android:gravity="center"
+            android:id="@+id/minTextView"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="@string/_0"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/secTextView"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="@string/_0"
+            android:textSize="20sp"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
             android:orientation="horizontal">
 
             <TextView
@@ -171,23 +208,28 @@
             android:layout_width="wrap_content"
             android:layout_height="20dp">
 
+
         </TextView>
 
         <android.support.v7.widget.AppCompatButton
 
 
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/delete_event"
-            android:text="@string/delete_event" />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buttonDeleteEvent"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/delete_event"
+        android:text="@string/delete_event"
+        />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
 
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
