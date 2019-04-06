@@ -29,7 +29,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="20dp">
-        
+
     </TextView>
 
 
@@ -200,7 +200,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         ads:adSize="SMART_BANNER"
-        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+        ads:adUnitId="ca-app-pub-1501215034144631/6744755337" />
 
 
 </LinearLayout>
