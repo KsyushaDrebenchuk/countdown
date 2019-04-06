@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/enter_event"
+        android:hint="@string/enter_event"
         android:textSize="25sp" />
 
     <EditText
@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50sp"
         android:layout_gravity="center"
-        android:text="@string/action" />
+        android:hint="@string/action" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/nter_date_and_time"
+        android:hint="@string/nter_date_and_time"
         android:textSize="25sp" />
 
     <ImageView
@@ -70,7 +70,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
-            android:text="@string/year"
+            android:hint="@string/year"
             android:textSize="10sp" />
 
         <EditText
@@ -78,7 +78,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
-            android:text="@string/month"
+            android:hint="@string/month"
             android:textSize="10sp" />
 
         <EditText
@@ -86,7 +86,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
-            android:text="@string/day"
+            android:hint="@string/day"
             android:textSize="10sp" />
 
         <EditText
@@ -94,7 +94,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
-            android:text="@string/hour"
+            android:hint="@string/hour"
             android:textSize="10sp" />
 
         <EditText
@@ -102,7 +102,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
-            android:text="@string/min"
+            android:hint="@string/min"
             android:textSize="10sp" />
 
         <EditText
@@ -110,7 +110,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
-            android:text="@string/sec"
+            android:hint="@string/sec"
             android:textSize="10sp" />
     </LinearLayout>
 
@@ -121,6 +121,7 @@
     </TextView>
 
     <Button
+        android:background="@drawable/delete_event"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
