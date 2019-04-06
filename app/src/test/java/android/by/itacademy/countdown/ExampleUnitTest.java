@@ -1,4 +1,4 @@
-package android.itacademy.by.countdown;
+package android.by.itacademy.countdown;
 
 import org.junit.Test;
 
