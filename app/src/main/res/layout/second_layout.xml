@@ -64,8 +64,8 @@
         android:orientation="horizontal"
         android:gravity="center">
 
-        <EditText
-            android:id="@+id/year"
+        <TextView
+            android:id="@+id/yearTextView"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
@@ -74,40 +74,40 @@
             android:textSize="10sp"
             />
 
-        <EditText
-            android:id="@+id/mount"
+        <TextView
+            android:id="@+id/monthTextView"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="phone"
             android:text="месяц"
             android:textSize="10sp" />
 
-        <EditText
-            android:id="@+id/day"
+        <TextView
+            android:id="@+id/dayTextView"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="phone"
             android:text="@string/day"
             android:textSize="10sp" />
 
-        <EditText
-            android:id="@+id/hour"
+        <TextView
+            android:id="@+id/hourTextView"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="phone"
             android:text="@string/hour"
             android:textSize="10sp" />
 
-        <EditText
-            android:id="@+id/min"
+        <TextView
+            android:id="@+id/minTextView"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="phone"
             android:text="@string/min"
             android:textSize="10sp" />
 
-        <EditText
-            android:id="@+id/sec"
+        <TextView
+            android:id="@+id/secTextView"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="5dp"
