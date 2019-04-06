@@ -27,6 +27,7 @@
         android:textSize="25sp" />
 
     <EditText
+        android:id="@+id/action"
         android:layout_width="wrap_content"
         android:layout_height="50sp"
         android:layout_gravity="center"
@@ -65,6 +66,7 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/year"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
@@ -72,6 +74,7 @@
             android:textSize="10sp" />
 
         <EditText
+            android:id="@+id/mount"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
@@ -79,6 +82,7 @@
             android:textSize="10sp" />
 
         <EditText
+            android:id="@+id/day"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
@@ -86,6 +90,7 @@
             android:textSize="10sp" />
 
         <EditText
+            android:id="@+id/hour"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
@@ -93,6 +98,7 @@
             android:textSize="10sp" />
 
         <EditText
+            android:id="@+id/min"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
@@ -100,6 +106,7 @@
             android:textSize="10sp" />
 
         <EditText
+            android:id="@+id/sec"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
