@@ -5,28 +5,34 @@
     android:layout_height="match_parent"
     >
 
-    <LinearLayout
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="100dp"></LinearLayout>
+        android:layout_height="100dp">
+        
+    </TextView>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Введите название события"
-        android:textSize="25dp"
+        android:text="@string/enter_event"
+        android:textSize="25sp"
 
         />
-    <LinearLayout
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="50dp"></LinearLayout>
+        android:layout_height="50dp">
+
+    </TextView>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Введите дату и время наступления события"/>
-    <LinearLayout
+        android:text="@string/nter_date_and_time"/>
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="50dp"></LinearLayout>
+        android:layout_height="50dp">
+
+    </TextView>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -36,44 +42,46 @@
     <EditText
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:text="год"
-        android:textSize="10dp"/>
+        android:text="@string/year"
+        android:textSize="10sp"/>
 
     <EditText
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="10dp"
-        android:text="месяц"/>
+        android:textSize="10sp"
+        android:text="@string/month"/>
 
     <EditText
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="10dp"
-        android:text="день"/>
+        android:textSize="10sp"
+        android:text="@string/day"/>
 
     <EditText
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="10dp"
-        android:text="час"/>
+        android:textSize="10sp"
+        android:text="@string/hour"/>
     <EditText
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="10dp"
-        android:text="минута"/>
+        android:textSize="10sp"
+        android:text="@string/min"/>
     <EditText
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:textSize="10dp"
-        android:text="секунда"/>
+        android:textSize="10sp"
+        android:text="@string/sec"/>
 </LinearLayout>
-    <LinearLayout
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="50dp"></LinearLayout>
+        android:layout_height="50dp">
+
+    </TextView>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Сохранить"/>
+        android:text="@string/save_event"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
