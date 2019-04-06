@@ -13,18 +13,32 @@ import com.google.android.gms.ads.MobileAds;
 public class Main extends Activity {
     private AdView mAdView;
 
+    private int endYear = 2019; //значения берутся от пользователя
+    private int endMonth = 5; //значения берутся от пользователя
+    private int endDay = 5; //значения берутся от пользователя
+    private int endHour = 15; //значения берутся от пользователя
+    private int endMinutes = 30; //значения берутся от пользователя
+    private int endSeconds = 30; //значения берутся от пользователя
+
+
+    private Converter converter;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
-        MobileAds.initialize(this, "ca-app-pub-1501215034144631/6744755337");
+
+
+        converter = new Converter();
+        converter.covertDataToMillis(endYear, endMonth, endDay, endHour, endMinutes, endSeconds);
+
+        MobileAds.initialize(this, "ca-app-pub-3940256099942544~3347511713");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
         mAdView.setAdListener(new AdListener() {
             @Override
             public void onAdLoaded() {
-                // Code to be executed when an ad finishes loading.
             }
 
             @Override
@@ -34,26 +48,19 @@ public class Main extends Activity {
 
             @Override
             public void onAdOpened() {
-                // Code to be executed when an ad opens an overlay that
-                // covers the screen.
             }
 
             @Override
             public void onAdClicked() {
-                // Code to be executed when the user clicks on an ad.
             }
 
             @Override
             public void onAdLeftApplication() {
-                // Code to be executed when the user has left the app.
             }
 
             @Override
             public void onAdClosed() {
-                // Code to be executed when the user is about to return
-                // to the app after tapping on an ad.
             }
         });
     }
 }
- 

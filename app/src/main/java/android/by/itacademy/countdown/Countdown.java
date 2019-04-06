@@ -18,7 +18,24 @@ public class Countdown extends CountDownTimer {
 
     @Override
     public void onTick(long millisUntilFinished) {
+//
+//        long year =
+//        long month =
+//        long days =
 
+
+        long seconds = millisUntilFinished/1000;//convert to seconds
+        long minutes = seconds / 60;//convert to minutes
+        long hours = minutes / 60;//convert to hours
+
+        if(minutes > 0)//if we have minutes, then there might be some remainder seconds
+            seconds = seconds % 60;//seconds can be between 0-60, so we use the % operator to get the remainder
+        if(hours > 0)
+            minutes = minutes % 60;//similar to seconds
+
+//        String time = formatNumber(hours) + ":" + formatNumber(minutes) + ":" +
+//                formatNumber(seconds);
+//        textViewCountDown.setText(time);//set value to text
     }
 
     @Override
