@@ -1,144 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/imag1"
-    android:orientation="vertical">
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="100dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/imag1"
+            android:orientation="vertical">
 
-    </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp">
 
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_gravity="center"
-        android:background="@drawable/email" />
+            </TextView>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/email" />
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:hint="@string/enter_event"
-        android:textSize="25sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/enter_event"
+                android:textSize="25sp" />
 
-    <EditText
-        android:id="@+id/action"
-        android:layout_width="wrap_content"
-        android:layout_height="50sp"
-        android:layout_gravity="center"
-        android:hint="@string/action" />
+            <EditText
+                android:id="@+id/action"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:hint="@string/action" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp">
 
-    </TextView>
+            </TextView>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:hint="@string/nter_date_and_time"
-        android:textSize="25sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/nter_date_and_time"
+                android:textSize="25sp" />
 
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_gravity="center"
-        android:background="@drawable/schedule" />
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/schedule" />
 
-    <TextView
+            <TextView
 
-        android:layout_width="wrap_content"
-        android:layout_height="10dp">
+                android:layout_width="wrap_content"
+                android:layout_height="10dp">
 
-    </TextView>
+            </TextView>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/editTextYearMain"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:inputType="number"
-            android:hint="@string/year"
-            android:textSize="10sp" />
+                <EditText
+                    android:id="@+id/editTextYearMain"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:hint="@string/year"
+                    android:inputType="number"
+                    android:textSize="10sp" />
 
-        <EditText
-            android:id="@+id/editTextMonthMain"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:inputType="number"
-            android:hint="@string/mount"
-            android:textSize="10sp" />
+                <EditText
+                    android:id="@+id/editTextMonthMain"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:hint="@string/mount"
+                    android:inputType="number"
+                    android:textSize="10sp" />
 
-        <EditText
-            android:id="@+id/editTextDayMain"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:inputType="number"
-            android:hint="@string/day"
-            android:textSize="10sp" />
+                <EditText
+                    android:id="@+id/editTextDayMain"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:hint="@string/day"
+                    android:inputType="number"
+                    android:textSize="10sp" />
 
-        <EditText
-            android:id="@+id/editTextHourMain"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:inputType="number"
-            android:hint="@string/hour"
-            android:textSize="10sp" />
+                <EditText
+                    android:id="@+id/editTextHourMain"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:hint="@string/hour"
+                    android:inputType="number"
+                    android:textSize="10sp" />
 
-        <EditText
-            android:id="@+id/editTextMinutesMain"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:inputType="number"
-            android:hint="@string/min"
-            android:textSize="10sp" />
+                <EditText
+                    android:id="@+id/editTextMinutesMain"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:hint="@string/min"
+                    android:inputType="number"
+                    android:textSize="10sp" />
 
-        <EditText
-            android:id="@+id/editTextSecondsMain"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:inputType="number"
-            android:hint="@string/sec"
-            android:textSize="10sp" />
-    </LinearLayout>
+                <EditText
+                    android:id="@+id/editTextSecondsMain"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:hint="@string/sec"
+                    android:inputType="number"
+                    android:textSize="10sp" />
+            </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
 
-    </TextView>
+            </TextView>
 
-    <Button
-        android:background="@drawable/delete_event"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="@string/save_event" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/delete_event"
+                android:text="@string/save_event" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
 
-    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/adView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        ads:adSize="SMART_BANNER"
-        ads:adUnitId="ca-app-pub-1501215034144631/6744755337" />
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="ca-app-pub-1501215034144631/6744755337" />
 
-</LinearLayout>
+        </LinearLayout>
+</ScrollView>

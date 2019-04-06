@@ -1,206 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/imag1"
-    android:orientation="vertical">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="100dp">
-
-    </TextView>
-
-    <ImageView
-        android:id="@+id/icon_email"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_gravity="center"
-        android:background="@drawable/email" />
-
-    <TextView
-        android:id="@+id/name_action"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:gravity="center"
-        android:textSize="30sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="20dp">
-
-    </TextView>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="20dp">
-
-    </TextView>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="5dp"
-        android:gravity="center"
-        android:text="@string/time_to_your_event"
-        android:textSize="25sp" />
-
-    <TextView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_gravity="center"
-        android:background="@drawable/stopwatch" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="5dp">
-
-    </TextView>
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:background="@drawable/imag1"
+        android:orientation="vertical">
 
         <TextView
-            android:gravity="center"
-            android:layout_width="60dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/icon_email"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/email" />
+
+        <TextView
+            android:id="@+id/name_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="@string/year"
-            android:textSize="16sp" />
+            android:gravity="center"
+            android:textSize="30sp" />
 
         <TextView
-            android:gravity="center"
-            android:layout_width="60dp"
-            android:layout_height="20dp"
-            android:text="@string/mount"
-            android:textSize="16sp" />
+            android:layout_width="wrap_content"
+            android:layout_height="20dp">
+
+        </TextView>
+
 
         <TextView
-            android:gravity="center"
-            android:layout_width="60dp"
-            android:layout_height="20dp"
-            android:text="@string/day"
-            android:textSize="16sp" />
+            android:layout_width="wrap_content"
+            android:layout_height="20dp">
+
+        </TextView>
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
             android:gravity="center"
-            android:layout_width="60dp"
-            android:layout_height="20dp"
-            android:text="@string/hour"
-            android:textSize="16sp" />
+            android:text="@string/time_to_your_event"
+            android:textSize="25sp" />
 
         <TextView
-            android:gravity="center"
-            android:layout_width="60dp"
-            android:layout_height="20dp"
-            android:text="@string/min"
-            android:textSize="16sp" />
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/stopwatch" />
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="5dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_width="60dp"
-            android:layout_height="20dp"
-            android:text="@string/sec"
-            android:textSize="16sp" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/year"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="@string/mount"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="@string/day"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="@string/hour"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="@string/min"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="@string/sec"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/yearTextView"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/year"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+
+                android:id="@+id/monthTextView"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/mount"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/dayTextView"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/day"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/hourTextView"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/hour"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/minTextView"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/min"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/secTextView"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/sec"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp">
+
+        </TextView>
+
+        <android.support.v7.widget.AppCompatButton
+
+
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/delete_event"
+            android:text="@string/delete_event" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-1501215034144631/6744755337" />
 
 
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <TextView
-
-            android:gravity="center"
-            android:id="@+id/yearTextView"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:text="@string/year"
-            android:textSize="10sp" />
-
-        <TextView
-
-            android:gravity="center"
-            android:id="@+id/monthTextView"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:text="@string/mount"
-            android:textSize="10sp" />
-
-        <TextView
-            android:gravity="center"
-            android:id="@+id/dayTextView"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:text="@string/day"
-            android:textSize="10sp" />
-
-        <TextView
-            android:gravity="center"
-            android:id="@+id/hourTextView"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:text="@string/hour"
-            android:textSize="10sp" />
-
-        <TextView
-            android:gravity="center"
-            android:id="@+id/minTextView"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:text="@string/min"
-            android:textSize="10sp" />
-
-        <TextView
-            android:gravity="center"
-            android:id="@+id/secTextView"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:text="@string/sec"
-            android:textSize="10sp" />
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="20dp">
-
-    </TextView>
-
-    <android.support.v7.widget.AppCompatButton
-
-
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:background="@drawable/delete_event"
-        android:text="@string/delete_event"
-        />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-
-    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/adView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        ads:adSize="SMART_BANNER"
-        ads:adUnitId="ca-app-pub-1501215034144631/6744755337" />
-
-
-</LinearLayout>
+</ScrollView>
