@@ -64,7 +64,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/year"
+            android:id="@+id/editTextYearSecond"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
@@ -73,7 +73,7 @@
             android:textSize="10sp" />
 
         <EditText
-            android:id="@+id/mount"
+            android:id="@+id/editTextMonthSecond"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="phone"
