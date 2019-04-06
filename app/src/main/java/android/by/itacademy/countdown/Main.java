@@ -32,7 +32,7 @@ public class Main extends Activity {
         converter = new Converter();
         converter.covertDataToMillis(endYear, endMonth, endDay, endHour, endMinutes, endSeconds);
 
-        MobileAds.initialize(this, "ca-app-pub-3940256099942544~3347511713");
+        MobileAds.initialize(this, "ca-app-pub-1501215034144631~1349082130");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
