@@ -5,9 +5,11 @@
     android:background="@drawable/imag1"
     android:orientation="vertical">
 
-    <LinearLayout
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="100dp"></LinearLayout>
+        android:layout_height="100dp">
+
+    </TextView>
 
     <ImageView
         android:id="@+id/icon_email"
@@ -22,16 +24,18 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:gravity="center"
-        android:textSize="30dp" />
+        android:textSize="30sp" />
 
-    <LinearLayout
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="20dp"></LinearLayout>
+        android:layout_height="20dp"></TextView>
 
 
-    <LinearLayout
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="20dp"></LinearLayout>
+        android:layout_height="20dp">
+
+    </TextView>
 
     <TextView
         android:layout_width="match_parent"
@@ -39,8 +43,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="5dp"
         android:gravity="center"
-        android:text="До вашего события осталось...."
-        android:textSize="25dp" />
+        android:text="@string/time_to_your_event"
+        android:textSize="25sp" />
 
     <TextView
         android:layout_width="70dp"
@@ -48,9 +52,11 @@
         android:layout_gravity="center"
         android:background="@drawable/stopwatch" />
 
-    <LinearLayout
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="5dp"></LinearLayout>
+        android:layout_height="5dp">
+
+    </TextView>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -63,8 +69,8 @@
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
             android:inputType="phone"
-            android:text="год"
-            android:textSize="10dp" />
+            android:text="@string/year"
+            android:textSize="10sp" />
 
         <EditText
             android:id="@+id/mount"
@@ -72,31 +78,31 @@
             android:layout_height="50dp"
             android:inputType="phone"
             android:text="месяц"
-            android:textSize="10dp" />
+            android:textSize="10sp" />
 
         <EditText
             android:id="@+id/day"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="phone"
-            android:text="день"
-            android:textSize="10dp" />
+            android:text="@string/day"
+            android:textSize="10sp" />
 
         <EditText
             android:id="@+id/hour"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="phone"
-            android:text="час"
-            android:textSize="10dp" />
+            android:text="@string/hour"
+            android:textSize="10sp" />
 
         <EditText
             android:id="@+id/min"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="phone"
-            android:text="минута"
-            android:textSize="10dp" />
+            android:text="@string/min"
+            android:textSize="10sp" />
 
         <EditText
             android:id="@+id/sec"
@@ -104,13 +110,15 @@
             android:layout_height="50dp"
             android:layout_marginLeft="5dp"
             android:inputType="phone"
-            android:text="секунда"
-            android:textSize="10dp" />
+            android:text="@string/sec"
+            android:textSize="10sp" />
     </LinearLayout>
 
-    <LinearLayout
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="20dp"></LinearLayout>
+        android:layout_height="20dp">
+
+    </TextView>
 
     <Button
         android:layout_width="200dp"
@@ -119,7 +127,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:background="#32FFA03B"
-        android:text="Удалить событие" />
+        android:text="@string/delete_event" />
 
     <TextView
         android:layout_width="match_parent"
@@ -129,10 +137,11 @@
 
     <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        ads:adSize="BANNER"
+        ads:adSize="SMART_BANNER"
         ads:adUnitId="ca-app-pub-1501215034144631/6744755337"></com.google.android.gms.ads.AdView>
+
 
 </LinearLayout>
