@@ -17,7 +17,7 @@ public class Main extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
-        MobileAds.initialize(this, "ca-app-pub-1501215034144631/6744755337");
+        MobileAds.initialize(this, "ca-app-pub-3940256099942544~3347511713");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
