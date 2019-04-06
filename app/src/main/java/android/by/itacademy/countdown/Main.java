@@ -15,3 +15,4 @@ public class Main extends Activity {
         MobileAds.initialize(this, "ca-app-pub-1501215034144631/6744755337");
     }
 }
+ 
