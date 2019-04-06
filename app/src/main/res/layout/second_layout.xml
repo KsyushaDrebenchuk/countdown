@@ -65,7 +65,7 @@
         android:gravity="center">
 
         <TextView
-            android:id="@+id/yearTextView"
+            android:id="@+id/editTextYearSecond"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
@@ -75,7 +75,7 @@
             />
 
         <TextView
-            android:id="@+id/monthTextView"
+            android:id="@+id/editTextMonthSecond"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="phone"
