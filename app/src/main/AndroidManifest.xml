@@ -1,8 +1,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     package="android.by.itacademy.countdown">
 
-    <application android:allowBackup="true"
+
+
+    <application>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.ca-app-pub-1501215034144631~1349082130"
+            android:value="ca-app-pub-1501215034144631/6744755337" />
+
+        android:allowBackup="true"
         android:label="@string/app_name"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -17,4 +26,5 @@
         </intent-filter>
     </activity>
     </application>
+
 </manifest>
