@@ -12,79 +12,120 @@
 
     </TextView>
 
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/email" />
+
+
     <TextView
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="@string/enter_event"
-        android:textSize="25sp"/>
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:text="@string/action" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="50dp">
+        android:layout_height="10dp">
 
     </TextView>
 
     <TextView
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/nter_date_and_time"/>
+        android:gravity="center"
+        android:text="@string/nter_date_and_time"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/schedule" />
+
     <TextView
 
         android:layout_width="wrap_content"
-        android:layout_height="50dp">
+        android:layout_height="10dp">
 
     </TextView>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="horizontal">
 
-    <EditText
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:text="@string/year"
-        android:textSize="10sp"/>
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:text="@string/year"
+            android:textSize="10sp" />
 
-    <EditText
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:textSize="10sp"
-        android:text="@string/month"/>
+        <EditText
+            android:id="@+id/mount"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:text="@string/month"
+            android:textSize="10sp" />
 
-    <EditText
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:textSize="10sp"
-        android:text="@string/day"/>
+        <EditText
+            android:id="@+id/day"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:text="@string/day"
+            android:textSize="10sp" />
 
-    <EditText
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:textSize="10sp"
-        android:text="@string/hour"/>
-    <EditText
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:textSize="10sp"
-        android:text="@string/min"/>
-    <EditText
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:textSize="10sp"
-        android:text="@string/sec"/>
-</LinearLayout>
+        <EditText
+            android:id="@+id/hour"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:text="@string/hour"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/min"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:text="@string/min"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/sec"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:text="@string/sec"
+            android:textSize="10sp" />
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="50dp">
 
     </TextView>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/save_event"/>
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/save_event" />
 
     <TextView
         android:layout_width="match_parent"

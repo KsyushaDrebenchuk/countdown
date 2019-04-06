@@ -11,4 +11,5 @@
     <string name="month">месяц</string>
     <string name="nter_date_and_time">Введите дату и время наступления события</string>
     <string name="enter_event">Введите название события</string>
+    <string name="action">Название события</string>
 </resources>
