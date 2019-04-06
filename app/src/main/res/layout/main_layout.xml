@@ -78,7 +78,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="number"
-            android:hint="@string/month"
+            android:hint="@string/mount"
             android:textSize="10sp" />
 
         <EditText
