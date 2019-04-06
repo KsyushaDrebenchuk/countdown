@@ -65,33 +65,30 @@
         android:gravity="center">
 
         <TextView
-            android:id="@+id/editTextYearSecond"
+            android:id="@+id/textViewYearSecond"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
             android:inputType="phone"
-            android:text="@string/year"
             android:textSize="10sp"
             />
 
         <TextView
-            android:id="@+id/editTextMonthSecond"
+            android:id="@+id/textViewMonthSecond"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="phone"
-            android:text="месяц"
             android:textSize="10sp" />
 
         <TextView
-            android:id="@+id/dayTextView"
+            android:id="@+id/textViewDaySecond"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="phone"
-            android:text="@string/day"
             android:textSize="10sp" />
 
         <TextView
-            android:id="@+id/hourTextView"
+            android:id="@+id/textViewHourSecond"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="phone"
@@ -99,7 +96,7 @@
             android:textSize="10sp" />
 
         <TextView
-            android:id="@+id/minTextView"
+            android:id="@+id/textViewMinutesSecond"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:inputType="phone"
@@ -107,7 +104,7 @@
             android:textSize="10sp" />
 
         <TextView
-            android:id="@+id/secTextView"
+            android:id="@+id/textViewSecondsSecond"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="5dp"
@@ -123,8 +120,7 @@
     </TextView>
 
     <android.support.v7.widget.AppCompatButton
-
-
+        android:id="@+id/buttonDeleteEvent"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
