@@ -2,36 +2,40 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:tools="http://schemas.android.com/tools"
-    package="android.by.itacademy.countdown">
+    package="android.by.drebenchksy.countdown">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_timer"
-        android:roundIcon="@mipmap/ic_launcher_timer"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
 
-        android:supportsRtl="true"
+        android:supportsRtl="false"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
         <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-1501215034144631~1349082130"/>
+            android:value="ca-app-pub-1501215034144631~1349082130" />
 
         <activity
-            android:name=".MainActivity"
+            android:name="android.by.drebenchksy.countdown.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"  />
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name=".SecondActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="android.by.drebenchksy.countdown.SecondActivity"
+            android:parentActivityName="android.by.drebenchksy.countdown.MainActivity" />
+
+        <activity android:name="android.by.drebenchksy.countdown.EventNotificationActivity" />
+
+        <receiver android:name="android.by.drebenchksy.countdown.TimeNotification" />
     </application>
 
 </manifest>

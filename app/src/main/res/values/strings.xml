@@ -1,16 +1,17 @@
 <resources>
-    <string name="app_name">Countdown</string>
+    <string name="app_name">Обратный отсчет</string>
     <string name="delete_event">Удалить событие</string>
     <string name="sec">секунд</string>
     <string name="min">минут</string>
     <string name="hour">час</string>
     <string name="day">день</string>
     <string name="year">год</string>
-    <string name="time_to_your_event">До вашего события осталось....</string>
     <string name="save_event">Сохранить</string>
+    <string name="button_see_countdown">Таймер</string>
+    <string name="button_notification_ok">Ок</string>
+    <string name="text_view_notification">Время вышло!</string>
     <string name="mount">месяц</string>
     <string name="nter_date_and_time">Введите дату и время наступления события</string>
     <string name="enter_event">Введите название события</string>
     <string name="action">Название события</string>
-    <string name="_0">0</string>
 </resources>
