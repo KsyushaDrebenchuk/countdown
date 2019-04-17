@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.support.v4.app.NotificationCompat;
+import android.util.Log;
 
 public class TimeNotification extends BroadcastReceiver {
 
@@ -28,21 +29,12 @@ public class TimeNotification extends BroadcastReceiver {
                 0, notificationIntent,
                 PendingIntent.FLAG_CANCEL_CURRENT);
 
-        String message;
-        String actionName = MainActivity.dateStorage.getString(MainActivity.ACTION_NAME, null);
-
-        if (actionName != null) {
-            message = actionName;
-        } else {
-            message = "Время вышло";
-        }
-
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, NOTIFY_ID);
 
         builder.setContentIntent(contentIntent)
                 .setSmallIcon(R.mipmap.outline_event_available_24px)
-                .setContentTitle("Countdown")
-                .setContentText(message)
+                .setContentTitle("Обратный отсчет")
+                .setContentText("Время вышло")
                 .setAutoCancel(true);
 
         notificationManager.notify(1, builder.build());

@@ -83,9 +83,11 @@ public class SecondActivity extends Activity {
 
             @Override
             public void onFinish() {
-                MainActivity.dateStorage.edit().clear().apply();
-                MainActivity.alarmManager.cancel(MainActivity.pendingIntentEvent);
-                startActivity(new Intent(SecondActivity.this, EventNotificationActivity.class));
+                textViewActionName.setText("Название события не задано");
+                textViewDay.setText("00");
+                textViewHour.setText("00");
+                textViewMinutes.setText("00");
+                textViewSeconds.setText("00");
             }
         };
         countDownTimer.start();
