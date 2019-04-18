@@ -79,12 +79,43 @@ public class MainActivity extends Activity {
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                endYear = Integer.parseInt(editTextYear.getText().toString());
-                endMonth = Integer.parseInt(editTextMonth.getText().toString());
-                endDay = Integer.parseInt(editTextDay.getText().toString());
-                endHour = Integer.parseInt(editTextHour.getText().toString());
-                endMinutes = Integer.parseInt(editTextMinutes.getText().toString());
-                endSeconds = Integer.parseInt(editTextSeconds.getText().toString());
+
+                if (!editTextYear.getText().toString().equals("")) {
+                    endYear = Integer.parseInt(editTextYear.getText().toString());
+                } else {
+                    Toast.makeText(getApplicationContext(), "Необходимо заполнить все поля", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (!editTextMonth.getText().toString().equals("")) {
+                    endMonth = Integer.parseInt(editTextMonth.getText().toString());
+                } else {
+                    Toast.makeText(getApplicationContext(), "Необходимо заполнить все поля", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (!editTextDay.getText().toString().equals("")) {
+                    endDay = Integer.parseInt(editTextDay.getText().toString());
+                } else {
+                    Toast.makeText(getApplicationContext(), "Необходимо заполнить все поля", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (!editTextHour.getText().toString().equals("")) {
+                    endHour = Integer.parseInt(editTextHour.getText().toString());
+                } else {
+                    Toast.makeText(getApplicationContext(), "Необходимо заполнить все поля", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (!editTextMinutes.getText().toString().equals("")) {
+                    endMinutes = Integer.parseInt(editTextMinutes.getText().toString());
+                } else {
+                    Toast.makeText(getApplicationContext(), "Необходимо заполнить все поля", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (!editTextSeconds.getText().toString().equals("")) {
+                    endSeconds = Integer.parseInt(editTextSeconds.getText().toString());
+                } else {
+                    Toast.makeText(getApplicationContext(), "Необходимо заполнить все поля", Toast.LENGTH_SHORT).show();
+                    return;
+                }
 
                 actionName = editTextActionName.getText().toString();
 
@@ -147,7 +178,7 @@ public class MainActivity extends Activity {
             }
         });
     }
-
+    
     private void eventNotification(long diff) {
         alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(this, TimeNotification.class);
