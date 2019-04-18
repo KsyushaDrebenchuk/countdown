@@ -178,7 +178,7 @@ public class MainActivity extends Activity {
             }
         });
     }
-    
+
     private void eventNotification(long diff) {
         alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(this, TimeNotification.class);
