@@ -10,8 +10,8 @@
     <string name="button_see_countdown">Показать таймер</string>
     <string name="button_notification_ok">Ок</string>
     <string name="text_view_notification">Время вышло!</string>
-    <string name="mount">месяц</string>
-    <string name="nter_date_and_time">Введите дату и время наступления события</string>
+    <string name="month">месяц</string>
+    <string name="enter_date_and_time">Введите дату и время предстоящего события</string>
     <string name="enter_event">Введите название события</string>
     <string name="action">Название события</string>
     <string name="textViewMainInfo">Сохранить можно только одно значение таймера за раз! Сохраняя новое значение таймера, автоматически удаляется старое!</string>

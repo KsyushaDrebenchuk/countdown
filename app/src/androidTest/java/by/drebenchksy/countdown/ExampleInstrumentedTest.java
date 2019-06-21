@@ -1,4 +1,4 @@
-package android.by.drebenchksy.countdown;
+package by.drebenchksy.countdown;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

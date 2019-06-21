@@ -1,14 +1,16 @@
-package android.by.drebenchksy.countdown;
+package by.drebenchksy.countdown;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.Nullable;
 
 import java.util.concurrent.TimeUnit;
 
@@ -102,10 +104,14 @@ public class SecondActivity extends Activity {
     private View.OnClickListener buttonDeleteClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            countDownTimer.cancel();
-            MainActivity.dateStorage.edit().clear().apply();
-            MainActivity.alarmManager.cancel(MainActivity.pendingIntentEvent);
-            startActivity(new Intent(SecondActivity.this, MainActivity.class));
+            if (MainActivity.dateStorage.getLong(MainActivity.MILLIS_INSTALLED, 0) != 0) {
+                countDownTimer.cancel();
+                MainActivity.dateStorage.edit().clear().apply();
+                MainActivity.alarmManager.cancel(MainActivity.pendingIntentEvent);
+                startActivity(new Intent(SecondActivity.this, MainActivity.class));
+            } else if (MainActivity.dateStorage.getLong(MainActivity.MILLIS_INSTALLED, 0) == 0) {
+                Toast.makeText(SecondActivity.this, "Событие не задано", Toast.LENGTH_SHORT).show();
+            }
         }
     };
 }

@@ -1,4 +1,4 @@
-package android.by.drebenchksy.countdown;
+package by.drebenchksy.countdown;
 
 import org.junit.Test;
 

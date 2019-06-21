@@ -1,4 +1,4 @@
-package android.by.drebenchksy.countdown;
+package by.drebenchksy.countdown;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -7,8 +7,8 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
-import android.support.v4.app.NotificationCompat;
-import android.util.Log;
+
+import androidx.core.app.NotificationCompat;
 
 public class TimeNotification extends BroadcastReceiver {
 
@@ -20,8 +20,8 @@ public class TimeNotification extends BroadcastReceiver {
 
         notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel mChannel = new NotificationChannel(NOTIFY_ID, "ChannelEvent", NotificationManager.IMPORTANCE_HIGH);
-            notificationManager.createNotificationChannel(mChannel);
+            NotificationChannel channel = new NotificationChannel(NOTIFY_ID, "ChannelEvent", NotificationManager.IMPORTANCE_HIGH);
+            notificationManager.createNotificationChannel(channel);
         }
 
         Intent notificationIntent = new Intent(context, EventNotificationActivity.class);
